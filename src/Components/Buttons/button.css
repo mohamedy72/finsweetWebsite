@@ -1,0 +1,13 @@
+.btn {
+  padding: 1rem 3rem;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 2.5rem;
+  cursor: pointer;
+}
+
+.bordered-btn {
+  border: 1px solid rgba(244, 246, 252, 0.2);
+  color: var(--white);
+}

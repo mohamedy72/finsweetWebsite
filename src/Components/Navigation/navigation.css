@@ -1,0 +1,17 @@
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--dark-grey);
+  font-size: 1rem;
+  margin-right: 1.875rem;
+}
+
+.nav-item.active {
+  transition: all 0.3s ease-in-out;
+  color: var(--white);
+}
