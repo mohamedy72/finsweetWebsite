@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <Header background="var(--tint-blue)" />
-      <Wrapper>
+      <main className="main-content">
         <Routes>
           <Route index element={<Home />} />
           <Route
@@ -63,8 +63,8 @@ function App() {
           />
           <Route path="*" element={<p>Page Not Found!</p>} />
         </Routes>
-      </Wrapper>
-      <Footer />
+      </main>
+      {/* <Footer /> */}
     </div>
   );
 }

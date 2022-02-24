@@ -1,4 +1,4 @@
-.nav-links {
+.desktop-nav {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -9,9 +9,20 @@
   color: var(--dark-grey);
   font-size: 1rem;
   margin-right: 1.875rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.nav-item.active {
-  transition: all 0.3s ease-in-out;
+.nav-item.active,
+.nav-item:hover {
   color: var(--white);
+}
+
+.mobile-nav .bordered-btn {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 60.625rem) {
+  .desktop-nav {
+    display: none;
+  }
 }

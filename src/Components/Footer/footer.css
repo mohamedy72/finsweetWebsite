@@ -1,4 +1,90 @@
 .footer {
   background: var(--tint-blue);
-  padding: 0 2.1875rem;
+  padding: 3.75rem 2.1875rem 0;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 0;
+}
+
+.footer .top-section {
+  display: flex;
+  gap: 2.1875rem;
+  justify-content: space-between;
+}
+
+.footer .left .logo {
+  margin-bottom: 1.375rem;
+}
+
+.footer .paragraph {
+  color: var(--white);
+  opacity: 0.8;
+  width: clamp(20rem, 3 * (1vw + 1vh), 100%);
+}
+
+.footer .left .paragraph {
+  margin-bottom: 5rem;
+}
+
+.footer .left .footer_contact {
+  background: var(--yellow);
+  color: var(--dark-blue);
+  padding: 1.125rem 2.1875rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .left .footer_contact .small {
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.footer .right .right_header {
+  margin-bottom: 0.9375rem;
+}
+
+.footer .right .paragraph {
+  margin-bottom: 1.5625rem;
+}
+
+.footer .right .social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer .right .social-icons .social {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.footer .header {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background: var(--white);
+}
+
+.footer .header .desktop-nav {
+  width: 100%;
+  margin-right: auto;
+}
+
+.footer .header,
+.footer .header .nav-item {
+  color: var(--dark-blue);
+}
+
+.footer .bordered-btn {
+  display: none;
+}
+
+@media screen and (max-width: 63.8125rem) {
+  .footer {
+    align-items: center;
+  }
 }

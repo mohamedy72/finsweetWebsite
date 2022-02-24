@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
+import { BorderedButton } from "../Buttons/Button";
 import "./navigation.css";
-const Navigation = () => {
+export const Navigation = ({ className, buttonLocation }) => {
   return (
-    <nav className="nav-links">
+    <nav className={className}>
       <NavLink to="/" className="nav-item">
         Home
       </NavLink>
@@ -21,6 +22,7 @@ const Navigation = () => {
       <NavLink to="blog" className="nav-item">
         Blog
       </NavLink>
+      <BorderedButton text="contact us" buttonLocation={buttonLocation} />
     </nav>
   );
 };

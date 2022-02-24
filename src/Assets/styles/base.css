@@ -4,13 +4,22 @@
   --royal-blue: #2405f2;
   --dark-blue: #282938;
   --tint-blue: #1c1e53;
+  --blackish-blue: #1b1c2a;
   --grey: #f4f6fc;
   --yellow: #fcd980;
   --light-yellow: #fcd980;
+  --lighter-yellow: #fde4a6;
   --accent: #eef4fa;
 
   --dark-grey: #bbbbcb;
   --white: #fff;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -257,7 +266,6 @@ fieldset {
    */
 
 legend {
-  box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -288,7 +296,6 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
@@ -375,29 +382,42 @@ body {
   line-height: 1.5;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
-  font-size: 3.375rem;
+  font-size: clamp(4rem, 3 * (1vw + 1vh), 3.375rem);
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: clamp(1.9rem, 3 * (1vw + 1vh), 3rem);
 }
 
 h3 {
-  font-size: 2.375rem;
+  font-size: clamp(1.7rem, 3 * (1vw + 1vh), 2.375rem);
 }
 
 h4 {
-  font-size: 2.25rem;
+  font-size: clamp(1.5rem, 3 * (1vw + 1vh), 2.25rem);
 }
 
 p {
   font-size: 1rem;
+  max-width: 70ch;
 }
 
 .container {
-  width: 90vw;
+  width: 90%;
   margin: 0 auto;
+}
+
+.main-content {
+  height: calc(100vh - (23.3701rem + 5.75rem));
+}
+
+@media screen and (max-width: 32.8125rem) {
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
 }
