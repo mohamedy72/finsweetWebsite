@@ -1,11 +1,9 @@
 import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./Assets/styles/base.css";
-import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
-import Wrapper from "./Components/Wrapper";
+import Footer from "./Layouts/Footer/Footer";
+import Header from "./Layouts/Header/Header";
 import Home from "./Pages/Home/Home";
-// import Blog from "./Pages/Blog/Blog";
 
 const AboutUs = lazy(() => import("./Pages/AboutUs/AboutUs"));
 const Features = lazy(() => import("./Pages/Features/Features"));
@@ -64,7 +62,7 @@ function App() {
           <Route path="*" element={<p>Page Not Found!</p>} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
