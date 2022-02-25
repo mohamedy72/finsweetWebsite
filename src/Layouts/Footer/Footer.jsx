@@ -1,7 +1,7 @@
-import Logo from "../Logo";
+import Logo from "../../Components/Logo";
 import "./footer.css";
 import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs";
-import Header from "../Header/Header";
+import Header from "../../Components/Header/Header";
 
 const Footer = () => {
   return (

@@ -1,0 +1,40 @@
+.num-box {
+  position: relative;
+  width: 3.125rem;
+  height: 3.125rem;
+  background: var(--royal-blue);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.num-box .text {
+  position: relative;
+  z-index: 5;
+  color: var(--white);
+}
+
+.num-box::before,
+.num-box::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.num-box::before {
+  z-index: 2;
+  top: -0.625rem;
+  right: -0.625rem;
+  background: #5239fa;
+  border-bottom-left-radius: 5px;
+}
+
+.num-box::after {
+  z-index: 1;
+  bottom: -1.5625rem;
+  left: -1.5625rem;
+  background: #fcd980;
+}

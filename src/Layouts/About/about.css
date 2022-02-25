@@ -1,0 +1,52 @@
+.about {
+  background: var(--grey);
+  color: var(--dark-blue);
+}
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 1rem;
+}
+
+.about .about-subheading {
+  width: 70%;
+  margin: 1rem 0;
+}
+.about .anchored-btn .anchor {
+  color: var(--royal-blue);
+}
+
+.about .right-part {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.about .right-part .feature {
+  max-width: 20.5rem;
+}
+
+.about .right-part .feature-head {
+  margin: 1rem 0 0.5rem;
+}
+
+.aobut .right-part .feature-body {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 57.5rem) {
+  .about .container {
+    flex-direction: column;
+  }
+  .about .left-part {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 32.1875rem) {
+  .about .right-part {
+    grid-template-columns: 1fr;
+  }
+}

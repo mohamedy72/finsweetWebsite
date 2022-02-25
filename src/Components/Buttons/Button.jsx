@@ -1,4 +1,5 @@
 import "./button.css";
+import { BsArrowRight } from "react-icons/bs";
 
 export const BorderedButton = ({ text, buttonLocation }) => {
   return (
@@ -22,3 +23,13 @@ export const SecondaryButton = () => {
   );
 };
 
+export const AnchoredButton = ({ label, fill }) => {
+  return (
+    <button className="anchored-btn">
+      <a className="anchor" href="#">
+        {label}
+      </a>
+      <BsArrowRight className="right-arrow" fill={fill} />
+    </button>
+  );
+};

@@ -1,7 +1,6 @@
 .hero {
   background: var(--tint-blue);
   color: var(--white);
-  padding: 1.6rem 0 4rem;
 }
 
 .hero .container {
@@ -16,35 +15,19 @@
 }
 
 .hero .left .sub-heading {
-  margin-bottom: 3rem;
+  margin: 1.5rem 0 3rem;
+  width: 85%;
+  opacity: 0.7;
 }
 
 .hero .left .main-btns {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
 }
 
-.hero .left .secondary-btn {
-  display: flex;
-  align-items: center;
-
-  background-color: transparent;
-  border: none;
-  color: var(--white);
-  cursor: pointer;
-}
-
-.hero .left .pricing {
-  margin: 0 1rem 0 2.5rem;
-  text-decoration: none;
-  color: var(--white);
-}
-
-.hero .left .secondary-btn:hover .right-arrow {
-  transform: translateX(1rem);
-  transition: transform 0.3s ease-out;
+.hero .anchored-btn {
+  margin-left: 2.5rem;
 }
 
 @media screen and (max-width: 73rem) {
@@ -63,22 +46,17 @@
   .hero .container {
     align-items: flex-start;
   }
-  .hero .left .main-btn {
-    padding: 1rem 1.1rem;
-  }
-  .hero .left .secondary-btn {
-    margin-left: 3rem;
-  }
-  .hero .left .pricing {
-    margin: 0;
-  }
 }
 
-@media screen and (max-width: 21.25rem) {
+@media screen and (max-width: 21.5625rem) {
   .hero .left .main-btns {
+    flex-direction: column;
     justify-content: space-between;
   }
-  .hero .left .secondary-btn {
-    margin-left: 0;
+  .hero .left .main-btn {
+    margin-bottom: 1rem;
+  }
+  .hero .left .anchored-btn {
+    margin: 0;
   }
 }
